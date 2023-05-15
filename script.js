@@ -1,3 +1,5 @@
+// Animation titre
+
 const textAnim = document.querySelector(".presentation__informations__h1");
 
 new Typewriter(textAnim, {
@@ -30,6 +32,8 @@ new Typewriter(textAnim, {
 
   .start();
 
+// Retour haut de page
+
 const btn = document.querySelector(".btn-rtn");
 
 btn.addEventListener("click", () => {
@@ -38,4 +42,13 @@ btn.addEventListener("click", () => {
     left: 0,
     behavior: "smooth",
   });
+});
+
+// Menu burger
+
+const navLinks = document.querySelector(".nav__links");
+const menuBurger = document.querySelector(".burger-menu");
+
+menuBurger.addEventListener("click", () => {
+  navLinks.classList.toggle("burger-mobile");
 });
