@@ -47,9 +47,9 @@ header nav {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-
   align-items: center;
-  padding: 30px 5% 0 5%;
+  padding: 30px 5% 2% 5%;
+  border-bottom: 0.5px solid white;
 }
 header nav h1 {
   font-family: "Special Elite", cursive;
@@ -79,7 +79,7 @@ header nav .nav__links a:hover {
 
 .presentation {
   display: flex;
-  padding: 150px 5% 100px 5%;
+  padding: 100px 5% 80px 5%;
 
   justify-content: center;
 }
@@ -129,28 +129,47 @@ header nav .nav__links a:hover {
   background-color: var(--violet);
 }
 
+/* ----------Stack technique---------- */
+
+.stack-technique {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+}
+
+.stack-technique__title {
+  padding-right: 100px;
+  text-transform: uppercase;
+}
+.logo-html {
+  width: 90px;
+}
+.logo-css {
+  width: 65px;
+}
+
 /* ----------Mes projets---------- */
 .mes-projets {
   display: flex;
-
   justify-content: center;
   flex-wrap: wrap;
-
   padding: 80px 0 100px 0;
 }
 .mes-projets__projet {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 5% 30px 5%;
+  padding: 20px 5% 20px 5%;
 }
 
 .mes-projets__projet__img {
-  width: 200px;
-  height: 130px;
+  width: 250px;
+  height: 150px;
   padding: 5px;
-  border: 1px solid white;
-  border-radius: 10px;
+
+  border-radius: 5px;
   margin-bottom: 20px;
 }
 
